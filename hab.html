@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bucin Mode by-hab</title>
+<style>
+    body {
+        background: linear-gradient(to right, #ff4e50, #fc913a);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        color: #fff;
+    }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    button {
+        background: #fff;
+        color: #ff4e50;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    button:hover {
+        background: #ff4e50;
+        color: #fff;
+    }
+    .hidden {
+        display: none;
+    }
+    .message {
+        font-size: 1.5em;
+        line-height: 1.5;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    .signature {
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 1em;
+        opacity: 0.8;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+<h1>coba pencet bawah ini👇</h1>
+<button id="startBtn">START</button>
+
+<div id="bucinMsg" class="hidden">
+    <p class="message">
+        KAMU KOK CANTIK/GANTENG BANGET!<br>
+        IBU KAMU NGIDAM APA SIHH 🤭<br>
+        SEHAT-SEHAT TRUS YAK!! 💕
+    </p>
+    <p class="signature">- by hab</p>
+</div>
+
+<script>
+    document.getElementById('startBtn').addEventListener('click', function() {
+        document.getElementById('bucinMsg').classList.remove('hidden');
+        this.classList.add('hidden');
+    });
+</script>
+
+</body>
+</html>
